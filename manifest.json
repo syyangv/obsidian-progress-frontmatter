@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-progress-frontmatter",
+  "name": "Progress Frontmatter",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Renders a unicode progress bar into a note's frontmatter, opt-in per-note via cssclasses.",
+  "author": "syyangv",
+  "authorUrl": "https://github.com/syyangv",
+  "isDesktopOnly": false
+}

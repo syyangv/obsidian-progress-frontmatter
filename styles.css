@@ -1,1 +1,21 @@
-/* obsidian-progress-frontmatter: no custom styles needed for v1 */
+.metadata-property[data-property-key="progress_display"] .metadata-property-value {
+  color: var(--interactive-accent, #002fa7) !important;
+}
+
+.metadata-property[data-property-key="progress_display"] .metadata-property-value *,
+.metadata-property[data-property-key="progress_display"] .metadata-input-longtext,
+.metadata-property[data-property-key="progress_display"] .metadata-input-text,
+.metadata-property[data-property-key="progress_display"] input,
+.metadata-property[data-property-key="progress_display"] textarea {
+  color: var(--interactive-accent, #002fa7) !important;
+  -webkit-text-fill-color: var(--interactive-accent, #002fa7) !important;
+}
+
+.progress-frontmatter-accent {
+  color: var(--interactive-accent, #002fa7) !important;
+}
+
+.progress-frontmatter-line-accent,
+.progress-frontmatter-line-accent * {
+  color: var(--interactive-accent, #002fa7) !important;
+}

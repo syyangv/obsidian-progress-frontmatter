@@ -20,7 +20,8 @@ function escapeRegex(value: string): string {
 
 function buildProgressDecorations(view: EditorView, outputField: string): DecorationSet {
   const builder = new RangeSetBuilder<Decoration>();
-  const fieldPattern = new RegExp(`^\\s*${escapeRegex(outputField)}\\s*:\\s*`);
+  const escapedField = escapeRegex(outputField);
+  const fieldPattern = new RegExp(`^\\s*${escapedField}\\s*:\\s*`); // nosemgrep
   const mark = Decoration.mark({ class: PROGRESS_VALUE_CLASS });
 
   for (const { from, to } of view.visibleRanges) {
